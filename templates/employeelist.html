@@ -1,0 +1,13 @@
+{% extends 'layout.html'%}
+{% block myContent %}
+<h2> EMPLOYEE DETAILS</h2>
+    {% for empl in emp %}
+    <ul class="list-group">
+        <li class="list-group-item"><b>Id:</b>{{empl.id}}</li>
+        <li class="list-group-item"><b>Name:</b>{{empl.name}}</li>
+        <li class="list-group-item"><b>Place:</b>{{empl.place}}</li>
+    </ul>
+    {% endfor %}
+{% endblock %}
+
+
